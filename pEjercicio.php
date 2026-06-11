@@ -7,6 +7,10 @@ if(isset($_GET['id'])){
     $vista = $controlador->vista;
     require_once __DIR__ . '/vistas/' . $vista . '.php';
 }else{
-    echo 'ID del ejercicio no proporcionado.';
+    $error = 'Error, id no proporcionado';
+    $controlador = new cEjercicio();
+    $controlador->mostrarError($error);
+    $vista = $controlador->vista;
+    require_once __DIR__ . '/vistas/' . $vista . '.php';
 }
 ?>

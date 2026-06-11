@@ -18,5 +18,10 @@ class cEjercicio{
         $this->vista = 'vResultado';
         return $datos;
     }
+
+    public function mostrarError($error){
+        $this->vista = 'vError';
+        return;
+    }
 }
 ?>
