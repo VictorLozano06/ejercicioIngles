@@ -8,13 +8,13 @@ class cEjercicio{
         $this->modelo = new mEjercicio();
     }
 
-    public function mostrarEjercicio(){
-        $datos = $this->modelo->listarEjercicio();
-        $this->vista = 'vEjercicio';
-        return $datos;
+    public function mostrarEjercicio($id){
+            $datos = $this->modelo->listarEjercicio($id);
+            $this->vista = 'vEjercicio';
+            return $datos;
     }
     public function mostrarResultado($id){
-        $datos = $this->modelo->listarResultado($id);
+        $datos = $this->modelo->listarEjercicio($id);
         $this->vista = 'vResultado';
         return $datos;
     }
