@@ -5,8 +5,6 @@ create table if not exists ejercicios (
     idEjercicio int auto_increment,
     nombre varchar(255) not null,
     descripcion text not null,
-    dificultad enum('facil', 'medio', 'dificil') not null,
-    constraint pk_ejercicios primary key (idEjercicio)
 );
 
 create table if not exists palabras (

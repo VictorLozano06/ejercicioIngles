@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Bienvenido <?php echo $datos['nombre'];?></h1>
+    <a href="vistas/vCrearEjercicio.php">Crear ejercicio</a>
 </body>
 </html>
